@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+#visual {
+    width: inherit;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-header {
+    text-align: center;
+    width: 55%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content-header .heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.content-header .sub-heading {
+    font-size: 14px;
+    margin: 5px;
+}
+
+.content-header .btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border:1px solid #222;
+    color:#222;
+    text-decoration: none;
+    width: 60px;
+}
+
+.content-header .btn:hover{
+background-color: #222;
+color:#fff;
+}
+
+.content-body {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 10px 60px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.content-body .slideBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 10px 15px;
+    color: #000;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    text-decoration: none;
+}
+
+.content-body .slideBtn:hover {
+    background-color: #e8e8e8;
+}
+
+.content-body .next {
+    left: -50px;
+}
+
+.content-body .prev {
+    right: -50px;
+}
+
+.content-body .error404 {
+    text-align: center;
+}
+
+.content-body .error404 .image {
+  width: 100%;
+}
+
+.content-body .error404 .btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border:1px solid #222;
+    color:#222;
+}
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 30px;
+
+}
+
+.content-footer .tutorial-logo {
+    width: 50px;
+}
+
+.content-footer .tutorial-name {
+    margin: 0px;
+    margin-left: 10px;
+}
